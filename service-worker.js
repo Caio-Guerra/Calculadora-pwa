@@ -2,7 +2,8 @@ const CACHE_NAME = "calculadora-cache-v1";
 const FILES_TO_CACHE = [
   "./",
   "./Calculadora.html",
-  "./estilo.css"
+  "./estilo.css",
+  "./manifest.json",
 ];
 
 
@@ -36,4 +37,5 @@ self.addEventListener("fetch", event => {
       return response || fetch(event.request);
     })
   );
+
 });
