@@ -4,6 +4,7 @@ const FILES_TO_CACHE = [
   "./Calculadora.html",
   "./estilo.css",
   "./manifest.json",
+  "./script.js"
 ];
 
 
@@ -39,3 +40,4 @@ self.addEventListener("fetch", event => {
   );
 
 });
+
