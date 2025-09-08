@@ -80,3 +80,10 @@ document.addEventListener('keydown', e => {
     if (e.key === 'Backspace') calc.delete();
     if (e.key === 'Escape') calc.clear();
 });
+
+//Registrar SW
+ if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js")
+                .then(() => console.log("Service Worker registrado com sucesso!"))
+                .catch(err => console.log("Erro ao registrar Service Worker:", err));
+        }
